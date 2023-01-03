@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+#screen {
+    margin-bottom: 10px;
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.calculator {
+    padding: 20px;
+    width: fit-content;
+    border-radius: 20px;
+    background-color: antiquewhite;
+}
+
+
+button {
+    width: 60px;
+    height: 60px;
+    margin: 3px;
+    font-size: larger;
+    user-select: none;
+}
+
+#container {
+    margin: 0;
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+}
+
+input{
+    padding-left: 10px;
+}

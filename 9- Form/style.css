@@ -1,0 +1,93 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f8f9f5;
+}
+
+.heading {
+  text-align: center;
+}
+
+.container {
+  width: 400px;
+  background-color: #f3f2ed;
+  border-radius: 10px;
+  box-shadow: 3px 3px 17px rgba(68, 68, 68, 0.6);
+}
+
+.formportion {
+  margin: 15px 40px;
+}
+
+.formportion input {
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  width: 99%;
+  margin-top: 4px;
+  margin-bottom: 2px;
+  padding: 7px 0px 7px 5px;
+}
+.submit {
+  border-radius: 4px;
+  border: none;
+  background-color: #99badd;
+  color: white;
+  width: 82%;
+  margin-top: 4px;
+  margin-bottom: 2px;
+  padding: 5px;
+  font-size: 19px;
+  margin: 7px 40px 10px 40px;
+  cursor: pointer;
+}
+.submit1 {
+  border-radius: 4px;
+  border: none;
+  background-color: #9dc183;
+  color: white;
+  width: 82%;
+  margin-top: 4px;
+  margin-bottom: 2px;
+  padding: 5px;
+  font-size: 19px;
+  margin: 7px 40px 20px 40px;
+  cursor: pointer;
+}
+
+.formportion label {
+  font-size: 18px;
+}
+
+.formportion span {
+  visibility: hidden;
+  color: #ea3c53;
+  font-size: small;
+}
+.formportion.error input {
+  border-color: #ea3c53;
+}
+.formportion.error span {
+  visibility: visible;
+}
+.formportion.success input {
+  border-color: #50c878;
+}
+
+input:focus {
+  outline: none;
+  border-color: gray;
+}
+
+button:focus {
+  outline: none;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="player player-0 active-player">
+        <h2 class="name name-txt">Player 1</h2>
+        <h1 class="name scoree" id="score0">0</h1>
+        <div class="current-score-box">
+          <h4>Current</h4>
+          <h3 id="current-score-p0">0</h3>
+        </div>
+      </div>
+      <div class="player player-1">
+        <h2 class="name name-txt">Player 2</h2>
+        <h1 class="name scoree" id="score1">0</h1>
+        <div class="current-score-box">
+          <h4>Current</h4>
+          <h3 id="current-score-p1">0</h3>
+        </div>
+      </div>
+    </div>
+    <div class="centerline">
+      <button class="new-game-txt" id="btn-reset">🔁 New Game</button>
+      <img src="dice-1.png" id="dice" />
+      <button id="btn-dice">🎲 Roll Dice</button>
+      <button id="btn-hold">⏺ Hold</button>
+      <button class="show-modal last-btn">📘 How To Play ?</button>
+    </div>
+
+    <div class="modal hidden1">
+      <button class="close-modal">&times;</button>
+      <h1>Instructions📃</h1>
+
+      <p>
+        Each Player Roll the dice on his turn, the dice number gets added to the
+        current score. Now you can roll the dice again or hold this score, and
+        holding this will add current score to your Total Score. Whenever you
+        roll a <strong>one</strong>, you'll loose all your curent score and then
+        it will be the next player's turn. The first player to reach
+        <strong>50</strong> points will win the game.
+      </p>
+    </div>
+    <div class="overlay hidden1"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
